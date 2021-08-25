@@ -1,0 +1,297 @@
+/* .container, .container-fluid, [class^="col-"]{
+ border: 2px solid red;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+h1,h2,h3,h4,h5,h6,span,small, p,a, button,table{
+  font-family: 'Quicksand',sans-serif !important;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+
+
+.card {
+
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.card1 {
+
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border: 1px solid #FFC107;
+}
+
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+
+
+/* warna */
+.hitam{
+  background-color: black;
+}
+
+
+
+/* Header */
+
+header img{
+  width: 80%;
+}
+
+/* navigasi */
+
+.navbar{
+  background-color: black !important;
+}
+
+nav a{
+  font-size: larger;
+  color: #FCBB00;
+}
+
+#main-navbar a{
+  border-bottom: 5px solid black;
+  text-transform: uppercase;
+}
+#main-navbar a:hover, #main-navbar .active{
+  border-bottom-color: #FCBA00;
+  transition: border-color 500ms;
+}
+
+#profil p{
+  font-size: 70px;
+  font-weight: 600;
+}
+#profil #pkecil{
+  font-size: 40px;
+  font-weight: 500;
+}
+
+#profil .lingkaran{
+  width: 160px;
+  height: 160px;
+  background-color: black;
+}
+
+.icon{
+  display: inline-block;
+  width: 40px;
+}
+
+.linebotvideo{
+  margin-top: 10px;
+}
+
+.linebotvideo .iframe{
+  width: 100%;
+  height: 400px;
+}
+
+.icons{
+  
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    margin: 0;
+    vertical-align: middle;
+  
+}
+
+.kontak {
+
+  position: fixed;
+
+  bottom: 6px;
+  right: 18px;
+  width: 80px;
+
+}
+
+.kontak img{
+  width: 70%;
+}
+
+.ikontak{
+  transition: width 2s, height 2s, transform 2s;
+}
+
+.ikontak:hover{
+  width: 100px;
+  height: 100px;
+  transform: rotate(-180deg);
+}
+
+/* button.detil {
+
+  margin: 0 auto;
+  background-color:black;
+  animation-name: stretch;
+  animation-duration: 0.9s; 
+  animation-timing-function: ease-out; 
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count:infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+
+button.detil:hover {
+
+  margin: 0 auto;
+  background-color:black;
+  animation-name:none;
+  animation-duration: 0s; 
+  animation-timing-function: ease-out; 
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count:unset;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+
+@keyframes stretch {
+  0% {
+    transform: scale(0.1);
+    background-color: black;
+    border-radius: 3%;
+    color: #FFC107;
+  }
+  3% {
+    background-color: wheat;
+  }
+  4% {
+    transform: scale(0.5);
+    background-color:#FFC107;
+    color: black;
+  }
+} */
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+
+.animated:hover {
+  -webkit-animation-duration: 0s;
+  animation-duration: 0s;
+}
+
+
+
+
+ 
+
+@-webkit-keyframes tada {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  10%, 20% {
+    -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+  }
+
+  30%, 50%, 70%, 90% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+
+  40%, 60%, 80% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes tada {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    -ms-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  10%, 20% {
+    -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+    -ms-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+  }
+
+  30%, 50%, 70%, 90% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    -ms-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+
+  40%, 60%, 80% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    -ms-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    -ms-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.tada {
+  -webkit-animation-name: tada;
+  animation-name: tada;
+}
+
+
+
+
+@media(max-width:400px){
+ 
+  nav a:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+    font-weight: none;
+    font-size: 1.2em ;
+ }
+
+ .kontak{
+   display: none;
+ }
+
+
+
+ .kontak img{
+  display: none;
+ }
+
+ div#profil{
+   font-size: xx-small;
+ }
+
+ div#profil [class^="col-"]{
+   padding: 10px;
+ }
+
+ div#kemampuan img{
+   display: none;
+ }
+
+
+ 
+}
